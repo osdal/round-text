@@ -1,0 +1,82 @@
+//====================================================================================================
+.page {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+	&__container {
+		background: $bgMainContainer;
+		display: flex;
+		width: 100%;
+		flex: 1;
+		& > div {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+		}
+		.central-logo {
+			position: relative;
+			.central-logo-img {
+			}
+			img {
+				height: 200px;
+				width: 200px;
+				object-fit: cover;
+				border-radius: 50%;
+			}
+			h1 {
+				width: 200px;
+				height: 200px;
+				// background: rgb(240, 217, 217);
+				opacity: 50%;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-right: -50%;
+				transform: translate(-50%, -50%);
+			}
+
+			h1 span {
+				font: 50px MartianMono, MonoSpace;
+				font-weight: 900;
+				height: 160px;
+				position: absolute;
+				top: 0%;
+				left: 50%;
+				// margin-right: -50%;
+				// transform: translate(-50%, -50%);
+				color: black;
+				text-transform: uppercase;
+				transform-origin: bottom center;
+			}
+			.my-name {
+				opacity: 50%;
+				height: 300px;
+				width: 300px;
+				transform: translate(-62px, 63%);
+			}
+		}
+		@include rotated-text;
+	}
+
+	&__left-sidebar {
+		flex: 0.3;
+		background: $bgLeftSidebarColor;
+	}
+
+	&__center {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0.7;
+		background: $bgCenterColor;
+	}
+
+	&__right-sidebar {
+		flex: 0.3;
+		background: $bgRightSidebarColor;
+	}
+}
+
+//====================================================================================================

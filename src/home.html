@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"HomePage"
+})
+
+<body>
+	<div class="wrapper">
+		@@include('html/_header.htm',{})
+		<main class="page">
+			<div class="page__container">
+				<div class="page__left-sidebar">LEFT</div>
+				<div class="page__center">
+					<div class="central-logo">
+						<div class="my-name">
+							<h1>Дмитрий Осятник</h1>
+						</div>
+						<div class="central-logo-img">
+							<img src="@img/20230322_112203.jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="page__right-sidebar">RIGHT</div>
+			</div>
+		</main>
+		@@include('html/_footer.htm',{})
+	</div>
+	@@include('html/_js.htm',{})
+</body>
+
+</html>
